@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dilip Thapa — Network Engineer</title>
+<meta name="description" content="Experienced Network & IT professional specialising in hotel technology infrastructure, cybersecurity, and system integrations." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">DT</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- BG -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+<canvas id="bg-canvas"></canvas>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose"><i class="fa fa-times"></i></button>
+  <a href="#hero" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#certifications" onclick="closeMobile()">Certs</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Dilip Thapa</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme"><i class="fa fa-moon"></i></button>
+        <a href="#contact" class="btn btn-primary" style="padding:0.6rem 1.4rem;font-size:0.88rem;">Hire Me</a>
+        <button class="nav-hamburger" id="hamburger"><i class="fa fa-bars"></i></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div style="position:relative;z-index:1;">
+    <div class="hero-badge">
+      <span class="hero-badge-tag">OPEN TO WORK</span>
+      Network & IT Infrastructure Engineer
+    </div>
+    <h1 class="hero-title">
+      Dilip Thapa<br />
+      <span class="gradient-text">Network Engineer</span>
+    </h1>
+    <p class="hero-subtitle">
+      Experienced IT professional specialising in hotel technology infrastructure — from pre-opening commissioning to cybersecurity, PMS/POS integrations, and 24/7 operations leadership.
+    </p>
+    <div class="hero-actions">
+      <a href="#experience" class="btn btn-primary">
+        <i class="fa fa-briefcase"></i> View Experience
+      </a>
+      <a href="#contact" class="btn btn-outline">
+        <i class="fa fa-envelope"></i> Get In Touch
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- MARQUEE — Tech stack -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-item"><i class="fa fa-network-wired"></i> LAN / WAN</div>
+    <div class="marquee-item"><i class="fa fa-shield-halved"></i> Palo Alto Firewall</div>
+    <div class="marquee-item"><i class="fa fa-shield-halved"></i> NetxGATE Firewall</div>
+    <div class="marquee-item"><i class="fa fa-server"></i> Windows Server</div>
+    <div class="marquee-item"><i class="fas fa-hotel"></i> PMS: IDS Next, Oasis</div>
+    <div class="marquee-item"><i class="fa fa-camera"></i> CCTV Systems</div>
+    <div class="marquee-item"><i class="fab fa-docker"></i> Docker · Kubernetes</div>
+    <div class="marquee-item"><i class="fa fa-cloud"></i> Cloud Server</div>
+    <div class="marquee-item"><i class="fa fa-phone-volume"></i> VoIP · EPBX</div>
+    <div class="marquee-item"><i class="fa fa-fingerprint"></i> Biometric Systems</div>
+    <div class="marquee-item"><i class="fab fa-git-alt"></i> Git · Jenkins</div>
+    <!-- Duplicate for seamless loop -->
+    <div class="marquee-item"><i class="fa fa-network-wired"></i> LAN / WAN</div>
+    <div class="marquee-item"><i class="fa fa-shield-halved"></i> Palo Alto Firewall</div>
+    <div class="marquee-item"><i class="fa fa-shield-halved"></i> NetxGATE Firewall</div>
+    <div class="marquee-item"><i class="fa fa-server"></i> Windows Server</div>
+    <div class="marquee-item"><i class="fas fa-hotel"></i> PMS: IDS Next, Oasis</div>
+    <div class="marquee-item"><i class="fa fa-camera"></i> CCTV Systems</div>
+    <div class="marquee-item"><i class="fab fa-docker"></i> Docker · Kubernetes</div>
+    <div class="marquee-item"><i class="fa fa-cloud"></i> Cloud Server</div>
+    <div class="marquee-item"><i class="fa fa-phone-volume"></i> VoIP · EPBX</div>
+    <div class="marquee-item"><i class="fa fa-fingerprint"></i> Biometric Systems</div>
+    <div class="marquee-item"><i class="fab fa-git-alt"></i> Git · Jenkins</div>
+  </div>
+</div>
+
+<!-- STATS -->
+<section class="section" id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal reveal-delay-1">
+        <div class="stat-number" data-target="3" data-suffix="+">0</div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-2">
+        <div class="stat-number" data-target="2">0</div>
+        <div class="stat-label">Hotel Pre-Openings Led</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-3">
+        <div class="stat-number" data-target="6">0</div>
+        <div class="stat-label">Certifications Earned</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-4">
+        <div class="stat-number" data-target="24" data-suffix="/7">0</div>
+        <div class="stat-label">IT Support Teams Led</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <span class="section-badge reveal"><i class="fa fa-circle-info"></i> About Me</span>
+        <h2 class="section-title reveal reveal-delay-1">
+          IT infrastructure<br /><span class="gradient-text">done right.</span>
+        </h2>
+        <p class="section-subtitle reveal reveal-delay-2">
+          Based in Nepal, I'm a network and IT professional with deep expertise in managing complex hotel technology ecosystems — from commissioning day-one server racks to maintaining enterprise-grade cybersecurity postures.
+        </p>
+        <div class="about-list reveal reveal-delay-3">
+          <div class="about-list-item"><i class="fa fa-check-circle"></i> Led full pre-opening IT commissioning for multiple hotel brands</div>
+          <div class="about-list-item"><i class="fa fa-check-circle"></i> Palo Alto & NetXGate firewall implementation & management</div>
+          <div class="about-list-item"><i class="fa fa-check-circle"></i> Seamless PMS/POS/F&B integrations across hotel departments</div>
+          <div class="about-list-item"><i class="fa fa-check-circle"></i> Team recruitment, training & 24/7 IT support leadership</div>
+          <div class="about-list-item"><i class="fa fa-check-circle"></i> Technology budgeting, vendor management & SLA negotiation</div>
+        </div>
+        <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;" class="reveal reveal-delay-4">
+          <a href="https://linkedin.com/in/dilip-thapa-060955156/" target="_blank" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/dilip26thapa" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+      <div class="about-visual reveal reveal-delay-2">
+        <div class="about-card-main">
+          <div class="about-grid-inner">
+            <div class="about-mini-card">
+              <div class="about-mini-icon"><i class="fa fa-shield-halved"></i></div>
+              <div class="about-mini-label">Firewall</div>
+              <div class="about-mini-value gradient-text">Palo Alto, NetxGATE</div>
+            </div>
+            <div class="about-mini-card">
+              <div class="about-mini-icon"><i class="fa fa-wifi"></i></div>
+              <div class="about-mini-label">Network</div>
+              <div class="about-mini-value gradient-text">LAN/WAN</div>
+            </div>
+            <div class="about-mini-card">
+              <div class="about-mini-icon"><i class="fa fa-hotel"></i></div>
+              <div class="about-mini-label">PMS Systems</div>
+              <div class="about-mini-value gradient-text">5+ Tools</div>
+            </div>
+            <div class="about-mini-card">
+              <div class="about-mini-icon"><i class="fa fa-graduation-cap"></i></div>
+              <div class="about-mini-label">Education</div>
+              <div class="about-mini-value gradient-text">BSc CS&IT</div>
+            </div>
+          </div>
+          <div style="padding:1.25rem;border-radius:12px;background:var(--bg-secondary);border:1px solid var(--border);">
+            <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.75rem;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;">Routing Protocols</div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <span style="font-size:0.78rem;padding:0.2rem 0.65rem;border-radius:99px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);color:var(--neon);">RIP</span>
+              <span style="font-size:0.78rem;padding:0.2rem 0.65rem;border-radius:99px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);color:var(--neon);">BGP</span>
+              <span style="font-size:0.78rem;padding:0.2rem 0.65rem;border-radius:99px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);color:var(--neon);">OSPF</span>
+              <span style="font-size:0.78rem;padding:0.2rem 0.65rem;border-radius:99px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);color:var(--neon);">EIGRP</span>
+              <span style="font-size:0.78rem;padding:0.2rem 0.65rem;border-radius:99px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);color:var(--neon);">VPN</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-floating">
+          <div class="about-floating-icon"><i class="fa fa-location-dot"></i></div>
+          <div>
+            <div class="about-floating-text">Based in</div>
+            <div class="about-floating-value">Nepal 🇳🇵</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto;">
+      <span class="section-badge reveal"><i class="fa fa-briefcase"></i> Work History</span>
+      <h2 class="section-title reveal reveal-delay-1">Professional<br /><span class="gradient-text">Experience</span></h2>
+    </div>
+    <div class="exp-grid">
+
+      <!-- Job 1 -->
+      <div class="exp-card reveal reveal-delay-1">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Assistant IT Manager</div>
+            <div class="exp-company"><i class="fa fa-building" style="color:var(--accent);margin-right:0.4rem;"></i>Himalayan Hideaway Resort, Pokhara (Centara Hotel and Resort)</div>
+          </div>
+          <div class="exp-period">Nov 2025 – Present</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Led full pre-opening IT setup including servers, Wi-Fi, PMS, POS, CCTV, VoIP, IPTV, Dimo Maint and biometric attendance systems ahead of resort launch.</li>
+          <li>Managed system integrations across front office, housekeeping, sales, and accounting platforms, ensuring seamless PMS/POS connectivity aligned to Centara Collection brand standards.</li>
+          <li>Implemented cybersecurity measures including Palo Alto firewall, endpoint protection, network segmentation, and automated data backup to protect sensitive guest and company data.</li>
+          <li>Recruited, trained, and led a 24/7 IT support team; managed vendor relationships and negotiated SLAs for hardware, software, and network maintenance within approved budget.</li>
+          <li>Supported senior management in technology budgeting and procurement planning, liaising with Centara's regional IT leadership to ensure group-wide compliance.</li>
+        </ul>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="exp-card reveal reveal-delay-2">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">IT Manager | HR</div>
+            <div class="exp-company"><i class="fa fa-building" style="color:var(--accent);margin-right:0.4rem;"></i>Hotel Diamond Palace Pvt. Ltd (Diamond Palace Lords Plaza)</div>
+          </div>
+          <div class="exp-period">Jan 2024 – Nov 2025</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Managed and maintained full hotel IT infrastructure including servers, Wi-Fi, PMS, POS, CCTV, biometric attendance, Cable/Satellite Set-Top Boxes, and EPBX (Alcatel Lucent Enterprise) systems through the property's rebranding.</li>
+          <li>Supervised and trained IT support staff delivering 24/7 technical support, coordinating with vendors for hardware, software, and network maintenance across all departments.</li>
+          <li>Managed system integrations between Front Office, Housekeeping, Sales, and Accounting platforms; implemented data backup and cybersecurity measures to safeguard sensitive data.</li>
+          <li>Supported HR operations including monthly payroll, tax documentation, attendance monitoring, manpower planning, and employee contract management.</li>
+        </ul>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="exp-card reveal reveal-delay-3">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Assistant IT Manager</div>
+            <div class="exp-company"><i class="fa fa-building" style="color:var(--accent);margin-right:0.4rem;"></i>Hotel Diamond Palace Pvt. Ltd</div>
+          </div>
+          <div class="exp-period">Dec 2022 – Dec 2023</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Led end-to-end pre-opening IT commissioning deploying servers, NAS, Wi-Fi, PMS, POS, CCTV, EPBX, Cable/Satellite Set-Top Boxes, and biometric attendance systems for full operational readiness from day one.</li>
+          <li>Configured NetXGate firewall and implemented data backup and cybersecurity protocols; coordinated with external vendors for hardware, software, and network installation.</li>
+          <li>Managed system integrations across Front Office, Housekeeping, Sales, and Finance platforms, ensuring seamless real-time data flow between all operational systems.</li>
+          <li>Supervised and trained IT support team for 24/7 guest and departmental support; assisted management in IT budgeting, procurement planning, and technology improvement projects.</li>
+        </ul>
+      </div>
+
+      <!-- Job 4 -->
+      <div class="exp-card reveal reveal-delay-4">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Computer Science Teacher & Lab In-Charge</div>
+            <div class="exp-company"><i class="fa fa-school" style="color:var(--accent);margin-right:0.4rem;"></i>St. Mary's Co. Ed. School</div>
+          </div>
+          <div class="exp-period">Sep 2019 – Sep 2022</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Taught Computer Science across grades 9–12, delivering structured curriculum with hands-on lab sessions to build strong programming and digital literacy foundations.</li>
+          <li>Trained and mentored a team of 5 educators in integrating technology into their curricula, fostering an interdisciplinary approach to learning across departments.</li>
+          <li>Initiated and organised a school-wide coding competition spanning grades 9–12, significantly boosting student engagement and programming proficiency.</li>
+          <li>Managed all classroom technologies and lab resources as Lab In-Charge, ensuring continuous availability, maintenance, and up-to-date systems for effective instructional use.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto;">
+      <span class="section-badge reveal"><i class="fa fa-wrench"></i> Expertise</span>
+      <h2 class="section-title reveal reveal-delay-1">Core<br /><span class="gradient-text">Skill Areas</span></h2>
+      <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto;">A full-stack IT toolkit built across hospitality, networking, and systems administration.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon"><i class="fa fa-network-wired"></i></div>
+        <div class="service-title">Networking</div>
+        <div class="service-desc">LAN/WAN design, routers, switches, Firewalls (NetXGATE, Palo Alto), VPN engineering, and routing protocols — RIP, BGP, OSPF, EIGRP.</div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon"><i class="fa fa-hotel"></i></div>
+        <div class="service-title">Hotel PMS & POS</div>
+        <div class="service-desc">Hands-on expertise with IDS, Oasis, SunSystems, Bee-system, Dimo Maint, and full PMS/POS/F&B integration and configuration.</div>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon"><i class="fa fa-shield-halved"></i></div>
+        <div class="service-title">Cybersecurity</div>
+        <div class="service-desc">CCTV surveillance, enterprise firewall management, data protection frameworks, endpoint security, and automated backup solutions.</div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon"><i class="fa fa-server"></i></div>
+        <div class="service-title">Systems Administration</div>
+        <div class="service-desc">Windows Server, Cloud Server, Active Directory, backup solutions, Samsung Hospitality TV, IPTV, and OTA platform management.</div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon"><i class="fab fa-docker"></i></div>
+        <div class="service-title">DevOps & Automation</div>
+        <div class="service-desc">Git, Jenkins, Docker, Kubernetes, and Ansible for infrastructure automation, CI/CD pipelines, and containerised deployments.</div>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon"><i class="fa fa-phone-volume"></i></div>
+        <div class="service-title">Communications</div>
+        <div class="service-desc">VoIP systems, EPBX (Alcatel Lucent Enterprise), website & email server management, and cable/satellite set-top box configuration.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section" id="certifications" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto;">
+      <span class="section-badge reveal"><i class="fa fa-certificate"></i> Credentials</span>
+      <h2 class="section-title reveal reveal-delay-1">Certifications &<br /><span class="gradient-text">Education</span></h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card reveal reveal-delay-1">
+        <div class="cert-icon"><i class="fa fa-network-wired"></i></div>
+        <div class="cert-name">SRM Network & VPN Engineer (CCNA)</div>
+      </div>
+      <div class="cert-card reveal reveal-delay-2">
+        <div class="cert-icon"><i class="fab fa-java"></i></div>
+        <div class="cert-name">JAVA Programming</div>
+      </div>
+      <div class="cert-card reveal reveal-delay-3">
+        <div class="cert-icon"><i class="fab fa-python"></i></div>
+        <div class="cert-name">Python With Artificial Intelligence (AI) Training</div>
+      </div>
+      <div class="cert-card reveal reveal-delay-1">
+        <div class="cert-icon"><i class="fa fa-user-secret"></i></div>
+        <div class="cert-name">Ethical Hacking Essentials (EHE)</div>
+      </div>
+      <div class="cert-card reveal reveal-delay-2">
+        <div class="cert-icon"><i class="fab fa-docker"></i></div>
+        <div class="cert-name">DevOps</div>
+      </div>
+      <div class="cert-card reveal reveal-delay-3">
+        <div class="cert-icon"><i class="fa fa-shield-halved"></i></div>
+        <div class="cert-name">Palo Alto Networks Academy — Network Security Fundamentals</div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div style="margin-top:4rem;padding:2.5rem;border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(99,102,241,0.08),rgba(56,189,248,0.05));border:1px solid rgba(99,102,241,0.2);" class="reveal">
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap;">
+        <div style="width:56px;height:56px;border-radius:14px;background:rgba(99,102,241,0.15);border:1px solid rgba(99,102,241,0.25);display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:var(--neon);flex-shrink:0;">
+          <i class="fa fa-graduation-cap"></i>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;">Bachelor of Science in Computer Science and IT</div>
+          <div style="font-size:0.9rem;color:var(--text-secondary);">School of Science and Technology, Mid-West University &nbsp;·&nbsp; Nov 2017 – Oct 2022</div>
+        </div>
+      </div>
+      <div style="font-size:0.82rem;font-weight:600;color:var(--accent);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.75rem;">Relevant Coursework</div>
+      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+        <span style="font-size:0.82rem;padding:0.3rem 0.8rem;border-radius:99px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);color:var(--neon);">Computer Networks</span>
+        <span style="font-size:0.82rem;padding:0.3rem 0.8rem;border-radius:99px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);color:var(--neon);">Database Management System</span>
+        <span style="font-size:0.82rem;padding:0.3rem 0.8rem;border-radius:99px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);color:var(--neon);">AI & Neural Networks</span>
+        <span style="font-size:0.82rem;padding:0.3rem 0.8rem;border-radius:99px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);color:var(--neon);">Database Administration</span>
+        <span style="font-size:0.82rem;padding:0.3rem 0.8rem;border-radius:99px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);color:var(--neon);">Network Security</span>
+        <span style="font-size:0.82rem;padding:0.3rem 0.8rem;border-radius:99px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);color:var(--neon);">Cloud Computing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section class="section" id="projects">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto;">
+      <span class="section-badge reveal"><i class="fa fa-code"></i> Projects</span>
+      <h2 class="section-title reveal reveal-delay-1">Featured<br /><span class="gradient-text">Build</span></h2>
+    </div>
+    <div class="project-card reveal">
+      <div style="text-align:center;">
+        <div class="project-emoji">📷</div>
+      </div>
+      <div>
+        <div class="project-tag">Desktop Application · Python</div>
+        <div class="project-title">Attendance System Using Face Recognition</div>
+        <div class="project-desc">
+          A desktop application that records student attendance using a webcam via facial recognition. Built with Python-Tkinter for the interface, OpenCV for real-time face detection and recognition, and MySQL for persistent attendance records storage.
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Tkinter</span>
+          <span class="tech-tag">OpenCV</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">Face Recognition</span>
+        </div>
+        <div style="margin-top:1.5rem;">
+          <a href="https://github.com/dilip26thapa" target="_blank" class="btn btn-outline" style="font-size:0.88rem;">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <span class="section-badge reveal"><i class="fa fa-envelope"></i> Contact</span>
+        <h2 class="section-title reveal reveal-delay-1">Let's connect<br /><span class="gradient-text">and collaborate</span></h2>
+        <p class="section-subtitle reveal reveal-delay-2">Whether you have an opportunity, a project, or just want to talk IT — my inbox is open.</p>
+        <div class="contact-info" style="margin-top:2.5rem;">
+          <div class="contact-info-item reveal reveal-delay-1">
+            <div class="contact-info-icon"><i class="fa fa-envelope"></i></div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value"><a href="mailto:dilip26thapa@gmail.com" style="color:inherit;">dilip26thapa@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item reveal reveal-delay-2">
+            <div class="contact-info-icon"><i class="fa fa-phone"></i></div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-value">+977 9860200824</div>
+            </div>
+          </div>
+          <div class="contact-info-item reveal reveal-delay-3">
+            <div class="contact-info-icon"><i class="fa fa-location-dot"></i></div>
+            <div>
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-value">Lamki Chuha, Kailali 10901, Nepal</div>
+            </div>
+          </div>
+          <div class="contact-info-item reveal reveal-delay-4">
+            <div class="contact-info-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <div class="contact-info-label">LinkedIn</div>
+              <div class="contact-info-value"><a href="https://linkedin.com/in/dilip-thapa-060955156/" target="_blank" style="color:var(--neon);">linkedin.com/in/dilip-thapa-060955156</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-card reveal reveal-delay-2">
+        <form id="contactForm" onsubmit="submitContact(event)" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-input" id="firstName" placeholder="Jane" />
+              <span class="form-error" id="firstNameError">Please enter your first name.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-input" id="lastName" placeholder="Smith" />
+              <span class="form-error" id="lastNameError">Please enter your last name.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" id="email" placeholder="jane@company.com" />
+            <span class="form-error" id="emailError">Please enter a valid email.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Organisation</label>
+            <input type="text" class="form-input" id="company" placeholder="Your hotel or company (optional)" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" id="message" placeholder="Tell me about the role, project, or opportunity..."></textarea>
+            <span class="form-error" id="messageError">Please enter a message.</span>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:1rem;">
+            <i class="fa fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa fa-check-circle"></i>
+            Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="nav-logo">Dilip Thapa</div>
+        <p class="footer-brand-desc">Network & IT Engineer with 3+ years of experience building and securing hospitality technology infrastructure across Nepal.</p>
+        <div class="footer-socials">
+          <a class="social-btn" href="https://linkedin.com/in/dilip-thapa-060955156/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-btn" href="https://github.com/dilip26thapa" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a class="social-btn" href="mailto:dilip26thapa@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+          <a class="social-btn" href="tel:+9779860200824" title="Phone"><i class="fa fa-phone"></i></a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1rem;">Quick Links</div>
+        <div style="display:flex;flex-direction:column;gap:0.6rem;">
+          <a href="#about" style="font-size:0.9rem;color:var(--text-secondary);transition:color 0.2s;" onmouseover="this.style.color='var(--neon)'" onmouseout="this.style.color='var(--text-secondary)'">About</a>
+          <a href="#experience" style="font-size:0.9rem;color:var(--text-secondary);transition:color 0.2s;" onmouseover="this.style.color='var(--neon)'" onmouseout="this.style.color='var(--text-secondary)'">Experience</a>
+          <a href="#skills" style="font-size:0.9rem;color:var(--text-secondary);transition:color 0.2s;" onmouseover="this.style.color='var(--neon)'" onmouseout="this.style.color='var(--text-secondary)'">Skills</a>
+          <a href="#certifications" style="font-size:0.9rem;color:var(--text-secondary);transition:color 0.2s;" onmouseover="this.style.color='var(--neon)'" onmouseout="this.style.color='var(--text-secondary)'">Certifications</a>
+          <a href="#contact" style="font-size:0.9rem;color:var(--text-secondary);transition:color 0.2s;" onmouseover="this.style.color='var(--neon)'" onmouseout="this.style.color='var(--text-secondary)'">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Dilip Thapa. All rights reserved.</span>
+      <span>Built with <span style="color:var(--accent);">♥</span> — Lamki Chuha, Nepal</span>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+  <i class="fa fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
