@@ -1,10 +1,10 @@
-# Dilip Thapa — Network Engineer
+# Portfolio Site
 
-**Network & IT Infrastructure Engineer** | 6+ years experience | Nepal
+A responsive personal portfolio website showcasing professional experience, skills, and expertise in IT infrastructure and network engineering.
 
-## About
+## About this Project
 
-Experienced IT professional specialising in hotel technology infrastructure — from pre-opening commissioning to cybersecurity, PMS/POS integrations, and 24/7 operations leadership.
+This is a static portfolio site built with HTML, CSS, and JavaScript. It presents a comprehensive overview of professional experience as an IT and network infrastructure engineer with 6+ years of hands-on expertise in hotel technology systems, cybersecurity, and operations leadership.
 
 ## Experience
 
@@ -57,6 +57,36 @@ Experienced IT professional specialising in hotel technology infrastructure — 
 **Bachelor of Science in Computer Science and IT**  
 School of Science and Technology, Mid-West University — Nov 2017 – Oct 2022
 
+## Project Structure
+
+```
+portfolio-site/
+├── index.html       # Main portfolio page
+├── style.css        # Responsive styling
+├── script.js        # Interactivity and functionality
+├── README.md        # This file
+└── CNAME            # Custom domain configuration
+```
+
+## Features
+
+- **Responsive Design** — Works seamlessly on desktop, tablet, and mobile devices
+- **Clean UI** — Professional and easy-to-navigate layout
+- **Project Showcase** — Displays professional experience, skills, and certifications
+- **Contact Information** — Easy access to email, phone, LinkedIn, and GitHub
+
+## Technologies Used
+
+- **HTML5** — Semantic markup for structure
+- **CSS3** — Responsive design with modern styling techniques
+- **JavaScript** — Interactive features and dynamic content
+
+## Setup & Deployment
+
+1. Clone the repository
+2. Open `index.html` in a web browser or deploy to a web server
+3. The site is ready to use — no build process required
+
 ## Contact
 
 - **Email:** dilip26thapa@gmail.com
@@ -64,3 +94,7 @@ School of Science and Technology, Mid-West University — Nov 2017 – Oct 2022
 - **Location:** Lamki Chuha, Kailali 10901, Nepal
 - **LinkedIn:** [linkedin.com/in/dilip-thapa-060955156](https://linkedin.com/in/dilip-thapa-060955156)
 - **GitHub:** [github.com/dilip26thapa](https://github.com/dilip26thapa)
+
+## License
+
+This project is open source and available under the MIT License.
