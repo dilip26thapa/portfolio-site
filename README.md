@@ -57,17 +57,6 @@ This is a static portfolio site built with HTML, CSS, and JavaScript. It present
 **Bachelor of Science in Computer Science and IT**  
 School of Science and Technology, Mid-West University — Nov 2017 – Oct 2022
 
-## Project Structure
-
-```
-portfolio-site/
-├── index.html       # Main portfolio page
-├── style.css        # Responsive styling
-├── script.js        # Interactivity and functionality
-├── README.md        # This file
-└── CNAME            # Custom domain configuration
-```
-
 ## Features
 
 - **Responsive Design** — Works seamlessly on desktop, tablet, and mobile devices
